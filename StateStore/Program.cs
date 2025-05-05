@@ -77,6 +77,6 @@ public class Program
 
 public class Item
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
+    public required int Id { get; init; }
+    public required string Name { get; set; }
 }
