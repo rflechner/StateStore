@@ -1,0 +1,16 @@
+@StateStore_HostAddress = https://localhost:7127
+
+POST {{StateStore_HostAddress}}/items
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "tata"
+}
+
+###
+
+GET {{StateStore_HostAddress}}/items/2
+Accept: application/json
+
+###
