@@ -1,3 +1,4 @@
+using System.Net;
 using Garnet;
 using Garnet.server;
 using Microsoft.AspNetCore.Mvc;
@@ -23,7 +24,10 @@ public class Program
                 EnableStorageTier = true,
                 EnableAOF = true,
                 Recover = true,
-                Port = garnetPort
+                EndPoints =
+                [
+                    new IPEndPoint(IPAddress.Loopback, garnetPort)
+                ]
             });
 
             garnetServer.Start();

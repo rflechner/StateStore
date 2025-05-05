@@ -4,13 +4,13 @@ POST {{StateStore_HostAddress}}/items
 Content-Type: application/json
 
 {
-  "id": 2,
-  "name": "tata"
+  "id": 5,
+  "name": "lalalalal popo"
 }
 
 ###
 
-GET {{StateStore_HostAddress}}/items/2
+GET {{StateStore_HostAddress}}/items/5
 Accept: application/json
 
 ###
